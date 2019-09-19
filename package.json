@@ -4,21 +4,9 @@
   "scripts": {
     "start": "node server.js"
   },
-  "description": "Kooli jaoks.",
-  "main": "index.js",
   "dependencies": {
-    "eslint": "^6.4.0",
     "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rasmvah/RakendusteProgrammeerimine.git"
-  },
-  "author": "Rasmus",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rasmvah/RakendusteProgrammeerimine/issues"
-  },
-  "homepage": "https://github.com/rasmvah/RakendusteProgrammeerimine#readme"
+  }
 }
+  
+  
