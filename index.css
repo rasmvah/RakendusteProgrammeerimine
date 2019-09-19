@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background: darkred;
+    padding: 10px 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header__logo{
+    width: 60px;
+}
+
+.header__buttons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.item:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 1);
+    transition: .5s all;
+}
+
+.item  img{
+    width: 400px;
+}
+
+.item__title{
+    color: darkred;
+    font-size: 20px;
+}
+
+.item__price{
+    color: darkred;
+    font-size: 15px;
+}
