@@ -1,31 +1,50 @@
 {
     const oddItemContainerClass = "result-row item-odd    ";
     const evenItemContainerClass = "result-row item-even    ";
-    const items_odd = document.getElementsByClassName(oddItemContainerClass);
-    const items_even = document.getElementsByClassName(evenItemContainerClass);
-
-    const imageClass = "small-image";
-    const itemImage = document.getElementsByClassName(imageClass);
-
+    const imageClass = "pictures";
     const MakeAndModelClass = "make_and_model";
-    const itemMAM = document.getElementsByClassName(MakeAndModelClass);
-
     const itemYearClass = "year";
-    const itemYear = document.getElementsByClassName(itemYearClass);
+    const itemFuelClass = "fuel";
+    const itemTransmissionClass = "transmission";
+    const itemPriceClass = "price";
+    const odd = document.getElementsByClassName(oddItemContainerClass);
+    const even = document.getElementsByClassName(evenItemContainerClass);
 
-    Array.from(oddItemContainerClass).forEach(item =>{
+    const arr1 = [];
+    const arr2 = [];
+
+    Array.from(odd).forEach(item =>{
         const images = item.getElementsByClassName(imageClass);
         if(images.length === 0) return;
         const image = images[0];
+        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
+        const ProdYear = item.getElementsByClassName(itemYearClass);
+        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
+        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
+        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
         console.log(images.length);
         console.log(image);
+        console.log(MakeAndModel);
+        console.log(ProdYear);
+        console.log(VehicleFuel);
+        console.log(VehicleTransmission);
+        console.log(VehiclePrice);
     });
-    Array.from(evenItemContainerClass).forEach(item =>{
+    Array.from(even).forEach(item =>{
         const images = item.getElementsByClassName(imageClass);
         if(images.length === 0) return;
         const image = images[0];
+        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
+        const ProdYear = item.getElementsByClassName(itemYearClass);
+        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
+        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
+        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
         console.log(images.length);
         console.log(image);
+        console.log(MakeAndModel);
+        console.log(ProdYear);
+        console.log(VehicleFuel);
+        console.log(VehicleTransmission);
+        console.log(VehiclePrice);
     });
-    console.log(items_odd, items_even, itemImage, itemMAM, itemYear);
 }
