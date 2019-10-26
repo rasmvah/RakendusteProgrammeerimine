@@ -1,0 +1,423 @@
+lg.php:1 Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+nimekiri.php?bn=2&a=100&aj=&ae=2&af=50&ag=0&ag=1&otsi=otsi+(23996):1 A cookie associated with a cross-site resource at http://hit.gemius.pl/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.
+{
+    const oddItemContainerClass = "result-row item-odd    ";
+    const evenItemContainerClass = "result-row item-even    ";
+    const imageClass = "pictures";
+    const MakeAndModelClass = "make_and_model";
+    const itemYearClass = "year";
+    const itemFuelClass = "fuel";
+    const itemTransmissionClass = "transmission";
+    const itemPriceClass = "price";
+    const odd = document.getElementsByClassName(oddItemContainerClass);
+    const even = document.getElementsByClassName(evenItemContainerClass);
+
+    const arr1 = [];
+    const arr2 = [];
+
+    Array.from(odd).forEach(item =>{
+        const images = item.getElementsByClassName(imageClass);
+        if(images.length === 0) return;
+        const image = images[0];
+        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
+        const ProdYear = item.getElementsByClassName(itemYearClass);
+        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
+        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
+        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
+        console.log(images.length);
+        console.log(image);
+        console.log(MakeAndModel);
+        console.log(ProdYear);
+        console.log(VehicleFuel);
+        console.log(VehicleTransmission);
+        console.log(VehiclePrice);
+        const src = image.dataset.src;
+        if(!src) return;
+        arr1.push({
+            image:src,
+            MakeAndModel,
+            ProdYear,
+            VehicleFuel,
+            VehiclePrice,
+            VehicleTransmission,
+        });
+    });
+    Array.from(even).forEach(item =>{
+        const images = item.getElementsByClassName(imageClass);
+        if(images.length === 0) return;
+        const image = images[0];
+        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
+        const ProdYear = item.getElementsByClassName(itemYearClass);
+        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
+        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
+        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
+        console.log(images.length);
+        console.log(image);
+        console.log(MakeAndModel);
+        console.log(ProdYear);
+        console.log(VehicleFuel);
+        console.log(VehicleTransmission);
+        console.log(VehiclePrice);
+        const src = image.dataset.src;
+        if (!src) return;
+        arr2.push({
+            image:src,
+            MakeAndModel,
+            ProdYear,
+            VehicleFuel,
+            VehiclePrice,
+            VehicleTransmission,
+        });
+    });
+}
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:25 1
+VM149:26 
+VM149:27 HTMLCollection [td.make_and_model]
+VM149:28 HTMLCollection [td.year]
+VM149:29 HTMLCollection [td.fuel]
+VM149:30 HTMLCollection [td.transmission]
+VM149:31 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]
+VM149:52 1
+VM149:53 <td class=​"pictures">​…​</td>​
+VM149:54 HTMLCollection [td.make_and_model]
+VM149:55 HTMLCollection [td.year]
+VM149:56 HTMLCollection [td.fuel]
+VM149:57 HTMLCollection [td.transmission]
+VM149:58 HTMLCollection [td.price]0: td.pricelength: 1__proto__: HTMLCollection
+undefined

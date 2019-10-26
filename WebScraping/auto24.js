@@ -1,7 +1,7 @@
 {
     const oddItemContainerClass = "result-row item-odd    ";
     const evenItemContainerClass = "result-row item-even    ";
-    const imageClass = "pictures";
+    const imageClass = "small-image";
     const MakeAndModelClass = "make_and_model";
     const itemYearClass = "year";
     const itemFuelClass = "fuel";
@@ -17,34 +17,32 @@
         const images = item.getElementsByClassName(imageClass);
         if(images.length === 0) return;
         const image = images[0];
-        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
-        const ProdYear = item.getElementsByClassName(itemYearClass);
-        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
-        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
-        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
-        console.log(images.length);
-        console.log(image);
-        console.log(MakeAndModel);
-        console.log(ProdYear);
-        console.log(VehicleFuel);
-        console.log(VehicleTransmission);
-        console.log(VehiclePrice);
+        const src = image.src;
+        if(!src) return;
+        arr1.push({
+            image:src,
+            MakeAndModelClass,
+            itemYearClass,
+            itemFuelClass,
+            itemPriceClass,
+            itemTransmissionClass,
+        });
+        console.log(JSON.stringify(arr1));
     });
     Array.from(even).forEach(item =>{
         const images = item.getElementsByClassName(imageClass);
         if(images.length === 0) return;
         const image = images[0];
-        const MakeAndModel = item.getElementsByClassName(MakeAndModelClass);
-        const ProdYear = item.getElementsByClassName(itemYearClass);
-        const VehicleFuel = item.getElementsByClassName(itemFuelClass);
-        const VehicleTransmission = item.getElementsByClassName(itemTransmissionClass);
-        const VehiclePrice = item.getElementsByClassName(itemPriceClass);
-        console.log(images.length);
-        console.log(image);
-        console.log(MakeAndModel);
-        console.log(ProdYear);
-        console.log(VehicleFuel);
-        console.log(VehicleTransmission);
-        console.log(VehiclePrice);
+        const src = image.src;
+        if (!src) return;
+        arr2.push({
+            image:src,
+            MakeAndModelClass,
+            itemYearClass,
+            itemFuelClass,
+            itemPriceClass,
+            itemTransmissionClass,
+        });
+        console.log(JSON.stringify(arr2));
     });
 }
