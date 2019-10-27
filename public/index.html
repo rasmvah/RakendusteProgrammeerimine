@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RP Toode</title>
+    <title>RP epood</title>
     <link href="index.css" rel="stylesheet">
-    <script src="item.js"></script>
+    <script src="./bundle.js"></script>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">
-            <img href="index.html" class="header__logo" src="images/tlu_logo.png" />
-        </a>
+        <img class="header__logo" src="images/tlu_logo.png" />
         <div class="header__buttons">
             <button>Login / Signup</button>
             <button>Cart</button>
         </div>
     </div>
-    <div class="content" id="item-body">
+    <div class="category-wrapper">
+        Select product category:
+        <select id="category-dd" name="category">
+            <option value="Phones" selected>Phones</option>
+            <option value="Laptops">Laptops</option>
+        </select>
+    </div>
+    <div class="content" id="item-list">
+
     </div>
 </body>
 </html>
