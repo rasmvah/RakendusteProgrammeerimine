@@ -1,5 +1,5 @@
 import React from "react";
-import { phones, laptops } from "./mydatabase.js";
+//import { phones, laptops } from "./mydatabase.js";
 import Header from "./header.jsx";
 import ItemList from "./itemlist.jsx";
 
@@ -8,39 +8,70 @@ class HomePage extends React.PureComponent{
     constructor(props){
         super(props);
         this.state = {
-            items: phones,
-        }
+            items: [],
+            selectedCategory: "phones",
+        };
     }
 
-    handleChange(event){
+    componentDidMount(){
+        this.fetchItems();
+    }
+
+    fetchItems = () => {
+        fetch("/api/items")
+        .then(res =>{
+            console.log("res", res);
+            return res.json();
+        })
+        .then(items => {
+            console.log("items", items);
+            this.setState({
+                items
+            });
+        })
+        .catch(err =>{
+            console.log("err", err);
+        });
+    }
+
+    handleDropdown(event){
         console.log(event.target.value);
-        switch(event.target.value){
-            case "phones":{
-                this.setState({
-                    items: phones,
-                });
-                break;
-            }
-            case "laptops":{
-                this.setState({
-                items: laptops,
-                });
-            break;
-            }
-        }
-        console.log("App state", this.state);
+        // switch(event.target.value){
+        //     case "phones":{
+        //         this.setState({
+        //             items: phones,
+        //         });
+        //         break;
+        //     }
+        //     case "laptops":{
+        //         this.setState({
+        //         items: laptops,
+        //         });
+        //     break;
+        //     }
+        // }
+        // console.log("App state", this.state);
+        this.setState({
+            selectedCategory: event.target.value
+        });
+    }
+
+    getVisibleItems = () => {
+        return this.state.items.filter( item => item.category === this.state.selectedCategory);
     };
+
     render(){
+        console.log("this.state", this.state);
         return (
             <>
                 <Header/>
-                <select onChange={this.handleChange.bind(this)}>
-                    <option value="Phones" selected>Phones</option>
-                    <option value="Laptops">Laptops</option>
+                <select onChange={this.handleDropdown.bind(this)}>
+                    <option value="phones" >Phones</option>
+                    <option value="laptops">Laptops</option>
                 </select>
-                <ItemList items={this.state.items} />
+                <ItemList items={this.getVisibleItems()} />
             </>
-        )
+        );
     }
 }
 
